@@ -20,7 +20,42 @@
 
         </div>
         <div class="main-right">
+            <div class="main-right-content">
+                <div class="main-right-heading-container">
+                    <h2>Tired of chasing clients for payment?</h2>
+                    <p>We’re building something to fix that — get early access.</p>
+                </div>
+                <form action="#" method="post">
+                    <fieldset>
+                        <div class="form-control-wrapper">
+                            <label for="email">Email <em>(required)</em></label>
+                            <input type="email" id="email" name="user_email"
+                                placeholder="*Where should we send early access?*" required>
+                        </div>
+                        <div class="form-control-wrapper">
+                            <label for="selection">What do you do <em>(required)</em></label>
+                            <select name="what_do_you_do" id="selection" required>
+                                <option value="" disabled selected>Select one</option>
+                                <option value="freelancer">Freelancer</option>
+                                <option value="coach">Coach</option>
+                                <option value="consultant">Consultant</option>
+                                <option value="creator_influencer">Creator / Influencer</option>
+                                <option value="small_agency">Small Agency</option>
+                                <option value="service_provider">Service Provider (e.g. design, marketing, writing)
+                                </option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="form-control-wrapper">
+                                <label for="textarea">What’s the most frustrating part about getting paid?</label>
+                                <textarea placeholder="*Optional, but helps us build better.*"
+                                    name="frustrating_part_about_getting_paid" id="textarea"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Join the Waitlist</button>
 
+                </form>
+            </div>
         </div>
     </main>
 </body>
