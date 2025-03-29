@@ -1,0 +1,146 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/* In Development */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img { 
+    max-width: 100%;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root {
+    --paidUpGreen: #68cd70;
+}
+
+/* Body styling */
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/background-image.png);
+    background-size: 100vw 100vh;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+/* h1 (general) styling */
+h1 {
+    font-family: "Roboto Flex";
+
+}
+
+
+
+
+/* h1 first line (general) styling */
+h1>span:nth-child(1) {
+    font-weight: 200;
+
+}
+
+/* Red h1 text color */
+.header-text-red {
+    color: #998181; 
+    background-image: linear-gradient(45deg, #998181 50%, #FFD6D6 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+/* Green h1 text color */
+.header-text-green {
+ color: #07170E; 
+ background-image: linear-gradient(45deg, #3f9f69 50%, #BDFFD8 100%); 
+ background-clip: text; 
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent; 
+}
+
+/* Main left p, label font */
+p {
+    font-family: "Nunito Sans";
+}
+
+
+
+
+/******************************************
+/* MAIN STYLING
+/*******************************************/
+/* Main styling */
+main {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Main left styling */
+.main-left {
+    position: relative;
+    background-image: url(/images/left-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: calc(100vh - 20px);
+    border: 2px solid var(--paidUpGreen);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* Logo styling */
+.main-left img {
+    width: 150px;
+    position: absolute;
+    top: 6.5%;
+}
+
+h1 {
+    position: absolute;
+    top: 13%;
+}
+
+/* Main left "p" styling */
+.main-left p {
+    max-width: 600px;
+    position: absolute;
+    bottom: 5%;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
