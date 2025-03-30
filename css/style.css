@@ -57,7 +57,15 @@ h1 {
 
 }
 
+/* h2 (general) styling */
+h2 {
+    font-family: "Nunito Sans";
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.4rem;
 
+
+}
 
 
 /* h1 first line (general) styling */
@@ -84,9 +92,14 @@ h1>span:nth-child(1) {
  -webkit-text-fill-color: transparent; 
 }
 
-/* Main left p, label font */
+/* p font family */
 p {
     font-family: "Nunito Sans";
+}
+/* Main right p font styling */
+.main-right-content p {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 
@@ -126,6 +139,7 @@ main {
     top: 6.5%;
 }
 
+/* h1 styling */
 h1 {
     position: absolute;
     top: 13%;
@@ -138,9 +152,297 @@ h1 {
     bottom: 5%;
 }
 
+/* Main left "p" styling */
+.main-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-image: url(/images/green-wave.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Main right content styling */
+.main-right-content {
+    background: rgba(211, 211, 211, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.201);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1.5px solid rgba(138, 138, 138, 0.373);
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+/* Main right heading container styling */
+.main-right-heading-container {
+    /* border: solid 1px black; */
+}
+
+/* Main right heading image styling */
+.main-right-heading-container img {
+   width: 70px;
+   margin-bottom: 15px;
+}
+
+/* Main right p (subtext) styling */
+.main-right-heading-container p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+ }
 
 
+/* Main right p (subtext) pseudo element styling */
+.main-right-heading-container p::after {
+    content: "";
+    display: block;
+    width: 70%;
+    border-bottom: 1px solid #a0a0a0;
+    height: 1px;
+ }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* FORM STYLING
 /*******************************************/
+
+/* Form styling */
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Form control wrapper styling */
+.form-control-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Form control title styling */
+label, legend {
+    font-family: "Nunito Sans";
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Email input styling */
+input[type="email"] {
+    display: block;
+    width: 80%;
+    padding: 0.5rem;
+    text-align: center;
+    border: black solid 1px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 21px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
+    transition: 500ms;
+}
+
+/* (Valid) Email input styling */
+input[type="email"]:valid {
+    border: var(--paidUpGreen) solid 2px;
+}
+
+/* (User Invalid) Email input styling */
+input[type="email"]:user-invalid {
+    border: red solid 1px;
+}
+
+/* (Focus) Email input styling */
+input[type="email"]:focus {
+    outline: none;
+    background: #cacaca7c;
+}
+
+/* (Hover) Email input styling */
+input[type="email"]:hover {
+    -webkit-box-shadow: 0px 0px 21px -6px ;
+    -moz-box-shadow: 0px 0px 21px -6px #1a7021;
+    box-shadow: 0px 0px 21px -3px #1a7021;
+    transition: 500ms;
+}
+
+
+/* Select styling */
+select {
+    appearance: none;
+    display: block;
+    width: 80%;
+    padding: 0.5rem;
+    text-align: center;
+    border: black solid 1px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 21px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
+    transition: 500ms;
+    font-weight: 700;
+    outline: none;
+}
+
+
+/* Sselect wrapper styling */
+.select-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Select icon styling */
+.select-wrapper::after {
+    content: url(/images/chevron-down.svg);
+    position: absolute;
+    right: 60px;
+    top: 5.5px;
+    width: 3px;
+    height: 3px;
+
+}
+
+/* (Hover) select styling */
+select:hover {
+    -webkit-box-shadow: 0px 0px 21px -6px ;
+    -moz-box-shadow: 0px 0px 21px -6px #1a7021;
+    box-shadow: 0px 0px 21px -3px #1a7021;
+    transition: 500ms;
+}
+
+/* (Valid) select  styling */
+select:valid {
+    border: var(--paidUpGreen) solid 2px;
+}
+
+/* Fieldset styling */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Radio label normal font weight */
+fieldset label {
+    font-weight: 400;
+}
+
+/* Ul styling */
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Cancel label margin bottom for radio input labels styling */
+li label {
+    margin-bottom: 0;
+}
+
+
+/* Radio input styling */
+input[type="radio"] {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: #07170E solid 2px;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    position: relative;
+    
+}
+
+/* Radio input reset styling */
+input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--paidUpGreen);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+
+}
+
+/* Li styling */
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Text area styling */
+textarea {
+    display: block;
+    width: 80%;
+    height: 150px;
+    padding: 0.5rem;
+    text-align: center;
+    border: black solid 1px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 21px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
+    transition: 500ms;
+}
+
+/* (Focus) Text area styling */
+textarea:focus {
+    outline: none;
+    background: #cacaca7c;
+}
+
+/* (Hover) Text area styling */
+textarea:hover {
+    -webkit-box-shadow: 0px 0px 21px -6px ;
+    -moz-box-shadow: 0px 0px 21px -6px #1a7021;
+    box-shadow: 0px 0px 21px -3px #1a7021;
+    transition: 500ms;
+}
+
+/* Button styling */
+button {
+    background: linear-gradient(90deg, #176639 3.92%, #2ECC71 96.62%);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: #1237228b;
+    color: white;
+    font-family: "Nunito Sans";
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 10px 25px;
+    transition: 500ms;
+}
+
+/* Button hover styling */
+button:hover {
+    -webkit-box-shadow: 0px 0px 21px -6px ;
+    -moz-box-shadow: 0px 0px 21px -6px #1a7021;
+    box-shadow: 0px 0px 21px -3px #1a7021;
+    transition: 500ms;
+    color: yellow;
+}
+
+
+

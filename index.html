@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/paidUp-icon-v1.png">
     <title>Document</title>
 </head>
 
@@ -27,6 +28,7 @@
         <div class="main-right">
             <div class="main-right-content">
                 <div class="main-right-heading-container">
+                    <img src="images/paidUp-icon-v1.png" alt="paidUp Icon">
                     <h2>Tired of chasing clients for payment?</h2>
                     <p>We’re building something to fix that — get early access.</p>
                 </div>
@@ -38,17 +40,19 @@
                     </div>
                     <div class="form-control-wrapper">
                         <label for="selection">What do you do <em>(required)</em></label>
-                        <select name="what_do_you_do" id="selection" required>
-                            <option value="" disabled selected>Select one</option>
-                            <option value="freelancer">Freelancer</option>
-                            <option value="coach">Coach</option>
-                            <option value="consultant">Consultant</option>
-                            <option value="creator_influencer">Creator / Influencer</option>
-                            <option value="small_agency">Small Agency</option>
-                            <option value="service_provider">Service Provider (e.g. design, marketing, writing)
-                            </option>
-                            <option value="other">Other</option>
-                        </select>
+                        <div class="select-wrapper">
+                            <select name="what_do_you_do" id="selection" required>
+                                <option value="" disabled selected>Select one</option>
+                                <option value="freelancer">Freelancer</option>
+                                <option value="coach">Coach</option>
+                                <option value="consultant">Consultant</option>
+                                <option value="creator_influencer">Creator / Influencer</option>
+                                <option value="small_agency">Small Agency</option>
+                                <option value="service_provider">Service Provider (e.g. design, marketing, writing)
+                                </option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
                     </div>
                     <fieldset>
                         <legend>How do you usually follow up on unpaid invoices?</legend>
